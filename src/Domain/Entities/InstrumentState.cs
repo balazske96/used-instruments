@@ -1,6 +1,6 @@
 namespace Domain.Entities;
 
-enum InstrumentState
+public enum InstrumentState
 {
     DRAFT,
     PUBLISHED,

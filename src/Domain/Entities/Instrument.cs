@@ -1,8 +1,7 @@
 namespace Domain.Entities;
 
-class Instrument
+public class Instrument : EntityWithId
 {
-    public Guid Id { get; set; }
     public User Owner { get; init; }
     public string Name { get; set; }
     public string Description { get; set; }

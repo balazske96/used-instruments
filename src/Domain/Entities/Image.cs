@@ -1,6 +1,6 @@
 namespace Domain.Entities;
 
-class Image
+public class Image : EntityWithId
 {
     public string Src { get; set; }
     public User Owner { get; set; }

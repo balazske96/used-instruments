@@ -1,6 +1,6 @@
 namespace Domain.Entities;
 
-enum PublicSpaceType
+public enum PublicSpaceType
 {
     STREET,
     ROAD,

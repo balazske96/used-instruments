@@ -1,6 +1,6 @@
 namespace Domain.Entities;
 
-enum Condition
+public enum Condition
 {
     UNOPENED,
     NEW,

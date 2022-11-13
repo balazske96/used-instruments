@@ -1,6 +1,6 @@
 namespace Domain.Entities;
 
-struct Address
+public struct Address
 {
     public string Country { get; set; } = "MAGYARORSZÁG";
     public string PublicSpace { get; set; }
