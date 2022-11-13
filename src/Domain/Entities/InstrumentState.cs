@@ -4,5 +4,6 @@ enum InstrumentState
 {
     DRAFT,
     PUBLISHED,
-    HIDDEN
+    HIDDEN,
+    SOLD
 }

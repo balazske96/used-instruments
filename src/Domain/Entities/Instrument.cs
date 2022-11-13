@@ -6,10 +6,10 @@ class Instrument
     public User Owner { get; init; }
     public string Name { get; set; }
     public string Description { get; set; }
-    public int Price { get; set; }
-    public Condition Condition { get; set; }
+    public uint Price { get; set; }
+    public Condition Condition { get; set; } = Condition.USED;
     public Address Address { get; set; }
-    public DateTime PublishedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
     public List<Image> Images { get; set; } = new();
     public InstrumentState State { get; set; } = InstrumentState.DRAFT;
 
@@ -19,7 +19,7 @@ class Instrument
         Condition condition,
         string name,
         string description,
-        int price
+        uint price
     )
     {
         Owner = owner;
