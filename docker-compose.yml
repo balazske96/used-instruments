@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  database:
+    image: 'mysql:8.0.31'
+    container_name: 'mysql_used_instruments'
+    volumes:
+      - used_instruments_mysql_data:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=used_instruments
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+
+volumes:
+  used_instruments_mysql_data:
